@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorSunnyStrong">#820F63</color>
+    <color name="colorSunnyLight">#f34c3b</color>
+    <color name="colorSormyLight">#652d93</color>
+    <color name="colorStormyStrong">#ce4cc8</color>
+    <color name="colorClearStrong">#4794c7</color>
+    <color name="colorClearLight">#73B9E1</color>
+    <color name="colorRainnyStrong">#616264</color>
+    <color name="colorRainnyLight">#DFE0E2</color>
+    <color name="colorSnowyLight">#2393b6</color>
+    <color name="colorSnowyStrong">#0a4268</color>
+    <color name="colorCloudyStrong">#911957</color>
+    <color name="colorCloudyyLight">#EA217A</color>
+    <color name="colorWindyStrong">#0b9444</color>
+    <color name="colorWindyLight">#88c93b</color>
+    <color name="blank">#ffffff</color>
+
+</resources>

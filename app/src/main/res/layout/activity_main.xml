@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/stormygradient">
+
+        <TextView
+            android:id="@+id/tvDay"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:text="Sunday"
+            android:textColor="@color/blank"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextUser" />
+
+        <EditText
+            android:id="@+id/editTextUser"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Ciudad"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@color/blank"
+            android:textColorHint="@color/blank"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="05:00"
+            android:textColor="@color/blank"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDay" />
+
+        <ImageView
+            android:id="@+id/iVState"
+            android:layout_width="215dp"
+            android:layout_height="199dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHour"
+            app:srcCompat="@drawable/ic_storm" />
+
+        <TextView
+            android:id="@+id/tvGrados"
+            android:layout_width="80dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="28dp"
+            android:text="11°"
+            android:textColor="@color/blank"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iVState" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="2dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="104dp"
+            android:background="@color/blank"
+            android:backgroundTint="@color/blank"
+            app:layout_constraintBottom_toBottomOf="@+id/tvGrados"
+            app:layout_constraintStart_toStartOf="@+id/tvGrados"
+            app:layout_constraintTop_toTopOf="@+id/tvGrados"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c "
+            android:textColor="@color/blank"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvGrados"
+            app:layout_constraintStart_toEndOf="@+id/tvGrados" />
+
+        <TextView
+            android:id="@+id/tvWeather"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="8dp"
+            android:text="Nublado"
+            android:textAlignment="center"
+            android:textColor="@color/blank"
+            android:textSize="30sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.176"
+            app:layout_constraintStart_toStartOf="@+id/divider2" />
+
+        <TextView
+            android:id="@+id/tvPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Londres,UK"
+            android:textColor="@color/blank"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvWeather"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="@+id/tvWeather"
+            app:layout_constraintTop_toBottomOf="@+id/tvWeather" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="43dp"
+            android:layout_height="47dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/ic_search_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextUser"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editTextUser"
+            app:layout_constraintVertical_bias="1.0" />
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
